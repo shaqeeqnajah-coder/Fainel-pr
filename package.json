@@ -1,0 +1,16 @@
+{
+  "name": "gemstone-business",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "validate": "node scripts/validate-artifact.mjs",
+    "dev": "node scripts/embed.mjs && node scripts/dev.mjs",
+    "test": "node scripts/embed.mjs && node tests/business-flow.mjs",
+    "start": "node scripts/embed.mjs && node --env-file-if-exists=.env.local scripts/server.mjs"
+  },
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=24"
+  }
+}
